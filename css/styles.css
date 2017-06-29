@@ -155,8 +155,8 @@ ul.contact-info { padding-left: 0; }
 
 /************ HOVER ************/
 
-/* Box shadow for all images */
-img:hover {
+/* Box shadow for profile img */
+.my-photo:hover {
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
    top: 0;
    bottom: 0;
@@ -201,6 +201,7 @@ nav a:hover {
 /****************************************************/
 
 .header-name {font-size: 1.6em;}
+
 
 /* Main-nav menu */
 nav ul a {
@@ -288,12 +289,59 @@ a {
 /* Styles for paragraphs */
 p { padding: 0 35px; }
 
+/* Hiding figcaption on mobile screens */
+figure {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+figcaption  {
+	/*display: none; */
+	position: absolute;
+	bottom: 5px;
+	opacity: 0;
+}
+
+/* Additional background color */
+.skills, .wrapper, .row {background: #f9f3e0;}
 
 /************************************/
 /********** MEDIA QUERIES ***********/
 /************************************/
 
 @media (min-width:768px) {
+
+/* effects for portfolio imgs  */
+
+	figure {
+		margin: 0;
+		padding: 0;
+		position: relative;
+		transition: all .5s ease-in-out
+	}
+
+	figure:hover figcaption {
+		box-shadow: inset 0 -165px 0 0 rgba(0,0,0,.5);
+		opacity: 1;
+	}
+
+	figcaption {
+		font-size: .9em;
+		opacity: 1;
+		line-height: 1.1;
+		bottom: 0;
+		width: 100%;
+		color: #fff;
+		padding: 0;
+		margin: 0;
+	    position: absolute;
+		background: rgba(19,43,102, .85);
+		text-shadow: 0 0 3px #000;
+		transition: all .3s ease-in-out;
+	}
+
+	figure:hover figcaption { top: 6rem; }
 
 /* Display .skills-list horizontally */
   .skills-list li { display: inline-block; }
@@ -307,7 +355,13 @@ p { padding: 0 35px; }
     width: 55%;
   }
 
-  .main-nav li { background: none; }
+  .main-nav li {
+		background: none;
+		border-radius: 6px;
+		transition: 0.3s;
+	}
+
+	.main-nav li:hover { background: #534a4a; }
 
 /* Styles for #profile section*/
   .clearfix::after {
@@ -432,7 +486,7 @@ ul.contact-info { margin-bottom: 3.25em; }
 
 @media (min-width: 1024px) {
 
-/* Setting for header container */
+/* Settings for header container */
   header {
     width: 90%;
     margin: 0 auto;
@@ -448,10 +502,8 @@ ul.contact-info { margin-bottom: 3.25em; }
 
 /* Moving nav to the right */
   header, nav { display: flex; }
-  nav { 
-   margin-right: 4em;
-   margin-left: auto; 
- }
+  nav { margin-left: auto; }
+  .main-nav {margin-right: 4em;}
 
 /* Settings to display 3 cols for media @ 1024px */
   .col { flex: 1 30%; }
