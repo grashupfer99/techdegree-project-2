@@ -59,6 +59,8 @@ nav a { display: block; }
 }
 
 
+
+
 /***** Images  *****/
 
 /* Setting my-photo img width, bottom margins */
@@ -303,6 +305,8 @@ figcaption  {
 	opacity: 0;
 }
 
+/* Additional background color */
+.skills, .wrapper, .row {background: #f9f3e0;} 
 
 /************************************/
 /********** MEDIA QUERIES ***********/
