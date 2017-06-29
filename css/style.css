@@ -1,0 +1,491 @@
+* { box-sizing: border-box; }
+
+/***** HEADER *****/
+/* Styles for navigation menu */
+header { text-align: center; }
+
+.main-nav{ width: 90%; }
+
+.main-nav,
+ nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav li {
+  width: 100%;
+  margin: 2px;
+  padding: 10px;
+  background: white;
+}
+
+/* Clickable buttons for mobile phones */
+nav a { display: block; }
+
+/* nav menu padding fix */
+.main-header ul { padding-left: 0; }
+
+/* Styles for Profile section */
+.profile-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+/* Styles for .skills section  */
+.skills-heading { padding-bottom: 20px; }
+
+.skills-list {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+ .skills-list li {
+    background: #67bb89;
+    padding: 5px;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 3px;
+ }
+
+.skills {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+
+/***** Images  *****/
+
+/* Setting my-photo img width, bottom margins */
+img:first-child {
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+/* Styles for all portfolio images */
+img[src*="portfolio"] {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Resetting top margin */
+img[src="images/portfolio-1.png"] { margin-top: 0; }
+
+/* Portfolio content wrapper */
+.wrapper {
+  text-align: center;
+  padding-top: .5rem;
+}
+
+.wrapper {background: white;}
+
+/* Styling Portfolio section for mobile screens */
+#portfolio {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.portfolio-heading { margin-bottom: 40px; }
+
+/* Margin settings for h2 headings */
+.col h2 { margin-top: .1em; }
+
+/* Contact section settings */
+.contact-container {
+  margin-top: 3em;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+/* Centering #profile & footer text */
+.self-intro,
+.contact-text
+ {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Top/bottom margins for footer */
+.main-footer { margin: 1.5em 0 1.5em 0; }
+
+/* Colors with styles for .row & .skills containers */
+.row,
+.skills { background: white; }
+
+.row { padding-bottom: 40px; }
+
+
+/***** FOOTER *****/
+/* Placing .footer-name & .back2top on the sides  */
+.footer-wrapper,
+nav { display: flex; }
+
+.phone {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  /*border: 1px solid red;*/
+}
+
+.footer-name {
+  margin-right: auto;
+  padding-left: 30px;
+}
+
+.back2top {
+  margin-left: auto;
+  padding-right: 30px;
+}
+
+hr { width: 90%; }
+
+.footer-nav { display: none; }
+
+/* footer contact-info padding fix */
+ul.contact-info { padding-left: 0; }
+
+
+/************ HOVER ************/
+
+/* Box shadow for all images */
+img:hover {
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+   top: 0;
+   bottom: 0;
+   left: 10px;
+   right: 10px;
+   -moz-border-radius: 100px / 10px;
+   border-radius: 3px;
+}
+
+/* Effects for skills-list */
+.skills-list li {
+  border-style: solid;
+  border-width: 1px;
+  transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.skills-list li:hover {
+  background: #e0c860;
+  transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+/* Text shadow effects for nav menu */
+nav a:hover {
+  color: gold;
+  text-shadow: 1px 1px 1px #000,
+               3px 3px 5px #808080;
+}
+
+/* display color:gold for selected headings */
+.portfolio-heading:hover,
+.contact-heading:hover,
+.skills-heading:hover,
+.footer-name:hover,
+.header-name:hover,
+.back2top:hover { color: gold; }
+
+
+/****************************************************/
+/************* Fonts & Effects & Styles *************/
+/****************************************************/
+
+.header-name {font-size: 1.6em;}
+
+/* Main-nav menu */
+nav ul a {
+  font-family: 'Chelsea Market', 'Open Sans', Tahoma, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: .9em;
+}
+
+/* Setting fonts & text-shadow for section headings*/
+.portfolio-heading,
+.contact-heading,
+.skills-heading,
+.footer-name,
+.header-name,
+.back2top {
+    font-family: 'Chelsea Market', 'Open Sans', Tahoma, Verdana, sans-serif;
+    color: #534a4a;
+    text-shadow: 1px 1px 1px #000,
+                 3px 3px 5px #808080;
+}
+
+/* Uppercase letter for section headings */
+.portfolio-heading,
+.contact-heading,
+.skills-heading,
+.back2top {
+  text-transform: uppercase;
+}
+
+.portfolio-heading,
+.contact-heading,
+.skills-heading {
+  font-size: 1.2rem;
+}
+
+/* Student's name */
+.header-name {
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+}
+
+/* Styles for footer fonts */
+.footer-name,
+.back2top {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Styles for .contact-container */
+.contact-container :not(h2) {
+  font-size: 1rem;
+  color: #828184;
+  line-height: 1.4;
+}
+
+.contact-info li span {font-weight: normal; }
+.contact-info li a { font-weight: bold; }
+.contact-heading {margin-bottom: 1.6em;}
+
+/* about me text */
+.self-intro {
+  width: 90%;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+.row h2 { font-size: 1.3em; }
+.row p { font-size: .97em; }
+
+/* Body styles */
+body {
+  font-family: 'Averia Serif Libre', 'Open Sans', Tahoma, Verdana, sans-serif;
+  line-height: 1.5;
+  color: #534a4a;
+  background: #f4f4f4;
+}
+
+/* Styles for hyperlinks  */
+a {
+  color: #534a4a;
+  text-decoration: none;
+}
+
+/* Styles for paragraphs */
+p { padding: 0 35px; }
+
+
+/************************************/
+/********** MEDIA QUERIES ***********/
+/************************************/
+
+@media (min-width:768px) {
+
+/* Display .skills-list horizontally */
+  .skills-list li { display: inline-block; }
+
+/* top margins for Header */
+  header { margin-top: 3em;}
+
+/* Styles for navigation */
+  .main-nav {
+    flex-direction: row;
+    width: 55%;
+  }
+
+  .main-nav li { background: none; }
+
+/* Styles for #profile section*/
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+/* Layout settings @ #profile */
+  img.my-photo {
+    float: right;
+    width: 40%;
+    margin-left: 15px;
+    padding-left: 0;
+  }
+
+  .self-intro {
+    display: block;
+    margin: 0;
+    padding: 0 20px 0 0;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+/* Setting width for .skills-list */
+  .skills-list { width: 80%; }
+
+/* Settings to display 2 cols for media @ 768px */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+/* Spacing for gutters @ .col */
+  .col { flex: 1 48%; }
+  .col:nth-child(odd) { margin-right: 6px; }
+  .col:nth-child(even) { margin-left: 6px; }
+
+  img[alt="portfolio-2"] { margin-top: 0; }
+
+  img[src*="portfolio"] {
+    width: 100%;
+    margin-bottom: 1.2rem;
+  }
+
+  .portfolio-heading {
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+
+.contact-heading {margin-bottom: 2.8em;}
+ul.contact-info { margin-bottom: 3.25em; }
+
+/* Styles for .contact-container */
+.contact-container :not(h2) { font-size: 1.25rem; }
+
+.portfolio-heading,
+.contact-heading,
+ .skills-heading {
+  font-size: 1.2rem;
+}
+
+.contact-container {
+  padding-top: 40px;
+  line-height: 1.3;
+  font-size: 1.2rem;
+}
+
+.row h2 {
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.row p {
+  font-size: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 1.32rem;
+}
+
+.contact-info {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  line-height: 2.1;
+}
+
+/* Contact section */
+  .contact-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+/* Styles for footer */
+  .back2top { display: none; }
+
+.footer-wrapper {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
+  margin-bottom: 3em;
+}
+
+/* display footer-nav */
+  .footer-nav { display: inline-block; }
+
+  .footer-nav li {
+    display: inline-block;
+    margin-left: 1.8rem;
+  }
+
+  .footer-name { padding-left: 0; }
+  .footer-nav ul { margin: 0; }
+
+  .main-footer a,
+  .footer-nav li a { font-size: .85em; }
+
+} /* End of 768px media query */
+
+
+@media (min-width: 1024px) {
+
+/* Setting for header container */
+  header {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+/* .profile-container settings for big screens  */
+  img.my-photo { margin-left: 2.5em; }
+  .self-intro { font-size: 1.28em; }
+  .profile-container {margin-bottom: 2.4em;}
+
+  img[src*="portfolio"] { width: 100%; }
+
+/* Moving nav to the right */
+  header, nav { display: flex; }
+  nav { margin-left: auto; }
+
+/* Settings to display 3 cols for media @ 1024px */
+  .col { flex: 1 30%; }
+
+/* Resetting all margins for .col */
+  .col:nth-child(n+1) { margin: 0; }
+
+/* Setting gutters for .col */
+  div#portfolio-2.col,
+  div#portfolio-5.col {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  img[ alt="portfolio-3"] { margin-top: 0; }
+
+  /* max width for all containers */
+  .main-container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+.row p {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+  /* Styles for .contact section & footer */
+  .contact-text { width: 65%; }
+  .contact-heading {margin-bottom: 1.95rem;}
+  .contact-container :not(h2) { font-size: 1.3rem; }
+  .portfolio-heading { margin-bottom: 20px; }
+  .footer-wrapper { margin-bottom: .1rem; }
+
+  .main-footer {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+} /* End of 1024px media query */
