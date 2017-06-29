@@ -298,11 +298,7 @@ figure {
 	position: relative;
 }
 
-<<<<<<< HEAD
-figcaption  {
-=======
 figcaption  { 
->>>>>>> origin/master
 	/*display: none; */
 	position: absolute;
 	bottom: 5px;
@@ -310,11 +306,7 @@ figcaption  {
 }
 
 /* Additional background color */
-<<<<<<< HEAD
-.skills, .wrapper, .row {background: #f9f3e0;}
-=======
 .skills, .wrapper, .row {background: #f9f3e0;} 
->>>>>>> origin/master
 
 /************************************/
 /********** MEDIA QUERIES ***********/
@@ -330,20 +322,12 @@ figcaption  {
 		position: relative;
 		transition: all .5s ease-in-out
 	}
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> origin/master
 	figure:hover figcaption {
 		box-shadow: inset 0 -165px 0 0 rgba(0,0,0,.5);
 		opacity: 1;
 	}
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> origin/master
 	figcaption {
 		font-size: .9em;
 		opacity: 1;
@@ -356,19 +340,12 @@ figcaption  {
 	    position: absolute;
 		background: rgba(19,43,102, .85);
 		text-shadow: 0 0 3px #000;
-<<<<<<< HEAD
-		transition: all .3s ease-in-out;
-=======
 		transition: all .3s ease-in-out;	
->>>>>>> origin/master
 	}
 
 	figure:hover figcaption { top: 6rem; }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 /* Display .skills-list horizontally */
   .skills-list li { display: inline-block; }
 
@@ -381,21 +358,12 @@ figcaption  {
     width: 55%;
   }
 
-<<<<<<< HEAD
-  .main-nav li {
-		background: none;
-		border-radius: 6px;
-		transition: 0.3s;
-	}
-
-=======
   .main-nav li { 
 		background: none; 
 		border-radius: 6px;
 		transition: 0.3s;
 	}
 	
->>>>>>> origin/master
 	.main-nav li:hover { background: #534a4a; }
 
 /* Styles for #profile section*/
