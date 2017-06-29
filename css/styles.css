@@ -448,7 +448,10 @@ ul.contact-info { margin-bottom: 3.25em; }
 
 /* Moving nav to the right */
   header, nav { display: flex; }
-  nav { margin-left: auto; }
+  nav { 
+   margin-right: 4em;
+   margin-left: auto; 
+ }
 
 /* Settings to display 3 cols for media @ 1024px */
   .col { flex: 1 30%; }
