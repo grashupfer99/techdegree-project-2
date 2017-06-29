@@ -432,12 +432,39 @@ ul.contact-info { margin-bottom: 3.25em; }
 
 @media (min-width: 1024px) {
 
-/* Setting for header container */
+/* Typewriter cursor effect */
+.header-name {
+	font-size: 1.85em;
+	
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #534a4a; /* typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.3s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+	@keyframes typing {
+		from { width: 0 } to { width: 20% }
+	}
+
+/* The typewriter cursor effect */
+	@keyframes blink-caret {
+		from, to { border-color: transparent }
+		50% { border-color: #534a4a; } /* orange*/
+	}
+/*******************/
+
+
+/* Settings for header container */
   header {
     width: 90%;
     margin: 0 auto;
     margin-top: 2em;
   }
+    
 
 /* .profile-container settings for big screens  */
   img.my-photo { margin-left: 2.5em; }
@@ -448,10 +475,8 @@ ul.contact-info { margin-bottom: 3.25em; }
 
 /* Moving nav to the right */
   header, nav { display: flex; }
-  nav { 
-   margin-right: 4em;
-   margin-left: auto; 
- }
+  nav { margin-left: auto; }
+  .main-nav {margin-right: 4em;}
 
 /* Settings to display 3 cols for media @ 1024px */
   .col { flex: 1 30%; }
