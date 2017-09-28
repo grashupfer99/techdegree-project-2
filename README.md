@@ -1,6 +1,6 @@
 # Responsive Layout 
-Responsive layout for mobile, tablet, and desktop screens.
-•	Implemented supplied mockups by developing interfaces using HTML and CSS
-•	Applied mobile-first responsive design 
-•	Used CSS animations and transitions to enhance provided designs
-Skills/technologies used: HTML, CSS, Responsive design
+<p>Responsive layout for mobile, tablet, and desktop screens.</p>
+•	Implemented supplied mockups by developing interfaces using HTML and CSS<br>
+•	Applied mobile-first responsive design<br>
+•	Used CSS animations and transitions to enhance provided designs<br>
+<em>Skills/technologies used: HTML, CSS, Responsive design</em>
